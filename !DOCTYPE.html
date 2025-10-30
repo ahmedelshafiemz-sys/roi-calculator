@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROI Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-left">
+        <h1 id="title">ROI Calculator</h1>
+        <p id="subtitle">Calculate Your Return on Investment</p>
+      </div>
+      <div class="logo">
+        <img src="https://i.imgur.com/4zHN4ZG.png" alt="Fruitful Solutions Logo" />
+      </div>
+    </header>
+
+    <div class="lang-buttons">
+      <button id="enBtn">English</button>
+      <button id="arBtn">العربية</button>
+    </div>
+
+    <div class="input-group">
+      <label id="laborLabel">Monthly Labor Cost</label>
+      <input type="number" id="laborCost" placeholder="Enter amount" />
+      <p id="laborDesc">Enter the total monthly salary you currently pay to workers.</p>
+    </div>
+
+    <div class="input-group">
+      <label id="machineLabel">Machine Cost</label>
+      <input type="number" id="machineCost" placeholder="Enter amount" />
+      <p id="machineDesc">Enter the price of the machine you plan to purchase.</p>
+    </div>
+
+    <div class="buttons">
+      <button id="calcBtn">Calculate ROI</button>
+      <button id="resetBtn" class="reset">Reset</button>
+    </div>
+
+    <div id="result"></div>
+
+    <div class="info">
+      <strong id="infoTitle">How it works:</strong>
+      <p id="infoText">
+        This calculator estimates your ROI by assuming a 66% reduction in labor costs. 
+        Payback Period = Machine Cost ÷ Monthly Savings.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
